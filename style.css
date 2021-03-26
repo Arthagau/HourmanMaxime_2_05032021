@@ -97,3 +97,15 @@ nav {
   font-size: 1.1em;
   margin-top: 5px;
 }
+/*              ACCUEIL          */
+#accueil {
+  margin-left: 25px;
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: 1em;
+}
+#accueil p {
+  padding-top: 10px;
+  font-size: medium;
+  font-weight: 400;
+}
