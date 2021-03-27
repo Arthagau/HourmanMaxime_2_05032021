@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
 }
-/*           HEADER            */
+/*                HEADER            */
 @media screen and (max-width: 620px) {
   header {
     display: flex;
@@ -97,7 +97,7 @@ nav {
   font-size: 1.1em;
   margin-top: 5px;
 }
-/*              ACCUEIL          */
+/*                  ACCUEIL          */
 #accueil {
   margin-left: 25px;
   margin-top: 25px;
@@ -187,5 +187,62 @@ nav {
     padding-left: 10px;
     margin-right: auto;
     font-weight: 600;
+  }
+}
+/*                  FILTRES               */
+#filtres {
+  display: flex;
+  width: 60%;
+  margin-left: 25px;
+}
+#filtres h3 {
+  padding-top: 30px;
+  margin-right: 25px;
+  font-weight: 900;
+}
+.filtresBase {
+  display: flex;
+  align-items: center;
+  width: min-content;
+  border: 2px solid #1b1a1a2c;
+  border-radius: 200px;
+  height: 40px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.filtresBase :hover {
+  color: #0065fc;
+  cursor: pointer;
+}
+.filtreIcone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #deebff;
+  color: #0065fc;
+  border-radius: 200px;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+.filtreDescription {
+  border: none;
+  width: max-content;
+  padding-right: 20px;
+  font-weight: 900;
+}
+@media screen and (max-width: 880px) {
+  #filtres {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    width: 100%;
+    margin-left: 15px;
+  }
+  #filtres h3 {
+    width: 100%;
+  }
+  .filtresBase {
+    margin-top: 10px;
   }
 }
