@@ -1,49 +1,14 @@
 * {
   list-style-type: none;
+  text-decoration: none;
   font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0;
 }
-/*                HEADER            */
-@media screen and (max-width: 620px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  nav {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 60px;
-  }
-  #logo {
-    position: relative;
-    left: -120px;
-  }
-  #inscription {
-    position: absolute;
-    right: 25px;
-    top: 35px;
-  }
-  #borduretop {
-    display: none;
-  }
-  #bordurebot {
-    border: 2px solid #0065fc;
-    position: absolute;
-    width: 200%;
-    bottom: 0px;
-    margin-bottom: 15px;
-  }
-  #bordurebota {
-    border: 2px solid #f2f2f2;
-    position: absolute;
-    width: 50%;
-    right: 1px;
-    top: 131px;
-  }
+h2 {
+  font-size: 140%;
 }
+/********************************* HEADER *********************************/
 header {
   height: 100px;
   display: flex;
@@ -56,7 +21,7 @@ nav {
   align-items: center;
 }
 #logo {
-  margin-left: 25px;
+  margin-left: 20px;
   margin-top: 25px;
 }
 #navbar {
@@ -71,13 +36,8 @@ nav {
   justify-content: center;
   align-items: center;
 }
-#navbar a {
-  text-decoration: none;
-  align-items: center;
-}
 #navActivites a {
   color: black;
-  text-align: center;
 }
 #active {
   position: relative;
@@ -96,6 +56,47 @@ nav {
   font-weight: bolder;
   font-size: 1.1em;
   margin-top: 5px;
+}
+/********************************* Responsive Header *********************************/
+@media screen and (max-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 70px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+  }
+  #logo {
+    position: relative;
+    left: -20px;
+  }
+  #inscription {
+    position: absolute;
+    right: 25px;
+    top: 35px;
+  }
+  #borduretop {
+    display: none;
+  }
+  #bordurebot {
+    border: 2px solid #0065fc;
+    position: absolute;
+    width: 280%;
+    bottom: 0px;
+    margin-bottom: 15px;
+  }
+  #bordurebota {
+    border: 2px solid #f2f2f2;
+    position: absolute;
+    width: 50%;
+    right: 1px;
+    top: 131px;
+  }
 }
 /*                  ACCUEIL          */
 #accueil {
