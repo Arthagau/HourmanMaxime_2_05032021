@@ -255,14 +255,14 @@ nav {
     margin-top: 10px;
   }
 }
-/*                  INFORMATIONS           */
+/********************************* INFORMATIONS *********************************/
 #information {
   display: flex;
   align-items: center;
-  margin-left: 25px;
+  margin: 0 0 20px 50px;
 }
 #information p {
-  font-size: small;
+  font-size: 0.8em;
   padding-top: 3px;
 }
 #iconeInformation {
@@ -275,6 +275,12 @@ nav {
   width: 25px;
   height: 25px;
   color: #0065fc;
+}
+/********************************* Responsive Informations *********************************/
+@media screen and (max-width: 880px) {
+  #information {
+    margin: 35px 0 35px 20px;
+  }
 }
 /********************************* HEBERGEMENTS *********************************/
 /********************************* Base de la section *********************************/
