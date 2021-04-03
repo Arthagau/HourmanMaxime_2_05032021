@@ -175,8 +175,8 @@ nav {
 /********************************* FILTRES *********************************/
 #filtres {
   display: flex;
-  width: 60%;
-  margin: 5px 0 30px 60px;
+  width: 96vw;
+  margin: 5px 0 30px 50px;
 }
 #filtres h3 {
   padding-top: 30px;
@@ -208,30 +208,26 @@ nav {
   margin-right: 15px;
 }
 .filtreDescription {
-  border: none;
   width: max-content;
   padding-right: 20px;
-  font-size: 100%;
   font-weight: 600;
 }
 /********************************* Responsive Filtres *********************************/
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 850px) {
   #filtres {
-    display: flex;
     flex-wrap: wrap;
-    width: 95%;
-    margin: 10px 0 15px 15px;
+    margin-left: 15px;
   }
   #filtres h3 {
     width: 100%;
-    font-size: 110%;
+    font-size: 1.1em;
     padding-bottom: 10px;
   }
   .filtresBase {
     margin-top: 10px;
   }
 }
-/********************************* INFORMATIONS *********************************/
+/********************************* INFOS *********************************/
 #information {
   display: flex;
   align-items: center;
@@ -250,10 +246,11 @@ nav {
   margin-right: 15px;
   width: 25px;
   height: 25px;
+  font-size: 0.8em;
   color: #0065fc;
 }
 /********************************* Responsive Informations *********************************/
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 750px) {
   #information {
     margin: 35px 0 35px 20px;
   }
@@ -263,71 +260,61 @@ nav {
 #hebergements {
   display: flex;
   justify-content: space-around;
-  width: 80%;
-  margin: auto;
+  margin: 0 20px;
 }
 #Marseille,
-.populaires {
+#populaires {
   background-color: #f2f2f2;
-  border-radius: 10px;
+  border-radius: 20px;
+  height: 70vh;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 #Marseille {
-  width: 1100px;
-  height: 650px;
-  margin: 25px 0 0 25px;
-  padding-right: 25px;
+  width: 65%;
 }
-.populaires {
-  width: 400px;
-  height: 650px;
-  margin: 25px 0 0 40px;
-  padding: 0px 25px 0px 0px;
-}
-.cartehotel a,
-.cartepopulaires a {
-  color: black;
-  text-decoration: none;
+#populaires {
+  width: 29%;
 }
 /********************************* Section Hebergements *********************************/
 
 #Marseille h2 {
   width: 100%;
-  padding: 40px 0 0px 30px;
+  padding: 15px 0 0px 30px;
 }
 #Marseille aside {
   width: 100%;
   text-align: left;
-  padding: 15px 0 15px 30px;
+  padding: 15px 0 25px 30px;
   font-size: 1.2em;
   font-weight: bold;
 }
 .cartehotel {
-  margin-left: 20px;
   border: 5px solid white;
   border-radius: 20px;
   box-shadow: 0px 0px 5px -1px rgba(8, 7, 7, 0.281);
-  height: 200px;
-  width: 250px;
+  height: 30%;
+  width: 28%;
   position: relative;
   overflow: hidden;
 }
 .cartehotel img {
   position: absolute;
-  height: 130px;
-  width: 250px;
-  margin: auto;
-  right: -500px;
+  height: 110%;
+  width: 110%;
+  top: -60px;
   left: -500px;
+  right: -500px;
+  margin: auto;
 }
 .hotelbase {
   position: absolute;
   bottom: 0px;
   background-color: white;
   width: 100%;
-  height: 40%;
+  height: 33%;
 }
 .hoteldescription,
 .populairesdescription {
@@ -341,47 +328,44 @@ nav {
 
 /********************************* Section Populaires *********************************/
 
-.titrepopulaires {
+#titrepopulaires {
   width: 100%;
   height: 40px;
-  padding: 40px 25px 0px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 25px;
 }
-.titrepopulaires i {
+#titrepopulaires i {
   font-size: 1.4em;
 }
 .cartepopulaires {
-  margin-left: 20px;
   border: 5px solid white;
   border-radius: 20px;
   box-shadow: 0px 0px 5px -1px rgba(8, 7, 7, 0.281);
-  height: 144px;
-  width: 345px;
-  min-width: 325px;
+  height: 22%;
+  width: 82%;
   display: flex;
 }
 .imagepopulaires {
   position: relative;
   overflow: hidden;
-  width: 144px;
-  height: 144px;
+  width: 50%;
+  height: 100%;
   border-radius: 20px 0 0 20px;
 }
 .imagepopulaires img {
   position: absolute;
-  width: 200px;
-  height: 160px;
+  width: 130%;
+  height: 110%;
   margin: auto;
   right: -500px;
   left: -500px;
 }
 .populairesbase {
   background-color: white;
-  width: 60%;
+  width: 67%;
   height: 100%;
-  padding-left: 10px;
 }
 .titrecarte {
   margin-bottom: 35px;
@@ -389,99 +373,66 @@ nav {
 .titrecarte p {
   padding-top: 5px;
 }
-@media screen and (min-width: 1201px) and (max-width: 1400px) {
-  #Marseille {
-    width: 55%;
-    height: 800px;
-    margin: auto;
-  }
-  .populaires {
-    width: 35%;
-    height: 800px;
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-  }
-}
+/********************************* Responsive Main *********************************/
 @media screen and (max-width: 1200px) {
   #hebergements {
-    display: flex;
     flex-direction: column-reverse;
   }
   #Marseille {
-    width: 85%;
+    width: 95%;
+    height: 100vh;
     margin: auto;
   }
-  .populaires {
-    display: flex;
+  #populaires {
     flex-direction: row;
-    width: 85%;
-    height: 450px;
+    width: 95%;
+    height: 80vh;
     margin: auto;
     margin-bottom: 45px;
   }
-}
-@media screen and (max-width: 1050px) {
-  .populaires {
-    height: 600px;
+  .cartehotel {
+    width: 40%;
+    height: 22%;
   }
-  #Marseille {
-    height: 1450px;
+  .cartepopulaires {
+    width: 60%;
+    height: 25%;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 750px) {
   #hebergements {
-    display: flex;
-    flex-direction: column-reverse;
     margin: 0;
-    padding: 0;
-    width: 100%;
   }
   #Marseille {
-    display: flex;
     justify-content: space-evenly;
     background-color: white;
-    height: 1500px;
-    width: 375px;
-    padding-right: 0;
-    margin: auto;
+    height: 220vh;
+    width: 100vw;
   }
   #Marseille h2 {
     padding: 30px 0 10px 15px;
   }
-  .titrepopulaires {
+  #titrepopulaires {
     padding: 30px 20px 15px 20px;
   }
-  .populaires {
-    height: 570px;
-    width: 375px;
+  #populaires {
+    height: 85vh;
+    width: 100vw;
     border-radius: 0;
     padding-bottom: 30px;
-    margin-bottom: 10px;
-    padding-right: 0;
   }
   .cartepopulaires {
-    margin: 5px 0 0 0;
-    width: 330px;
+    width: 90vw;
+    height: 20vh;
   }
   .cartehotel {
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    height: 200px;
-    width: 330px;
-    box-shadow: 0px 0px 6px 1px rgba(128, 128, 128, 0.479);
-    margin-left: 0;
+    height: 13%;
+    width: 90%;
   }
   .cartehotel img {
-    position: absolute;
-    height: 280px;
-    width: 400px;
-    margin: auto;
-    right: -500px;
-    left: -500px;
+    height: 130%;
+    width: 100%;
     top: -90px;
-    border-radius: 10px;
   }
 }
 /********************************* NOTES *********************************/
@@ -491,7 +442,7 @@ nav {
   width: 80px;
 }
 .note i {
-  color: rgba(2, 131, 252, 0.856);
+  color: #0065fc;
   transform: scale(0.8);
 }
 .note span {
