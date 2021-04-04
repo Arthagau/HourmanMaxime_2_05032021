@@ -42,20 +42,22 @@ nav {
 #active {
   position: relative;
 }
+#active a {
+  color: #0065fc;
+}
 #borduretop {
   position: absolute;
   border: 2px solid #0065fc;
   top: 0px;
   width: 100%;
 }
-#active a {
-  color: #0065fc;
-}
 #inscription {
+  margin-top: 5px;
+}
+#inscription a {
   color: #0065fc;
   font-weight: bolder;
   font-size: 1.1em;
-  margin-top: 5px;
 }
 /********************************* Responsive Header *********************************/
 @media screen and (max-width: 700px) {
@@ -260,7 +262,8 @@ nav {
 #hebergements {
   display: flex;
   justify-content: space-around;
-  margin: 0 20px;
+  width: 96%;
+  margin: auto;
 }
 #Marseille,
 #populaires {
@@ -457,9 +460,10 @@ nav {
   width: 95%;
   height: 55vh;
   margin-top: 20px;
-  margin-left: 50px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -532,8 +536,6 @@ nav {
 @media screen and (max-width: 1200px) {
   #activites {
     height: 800px;
-    margin: auto;
-    align-items: center;
   }
   .carteactivite,
   #carteactivite2,
