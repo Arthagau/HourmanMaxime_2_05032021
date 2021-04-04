@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Réservia</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Reservia</title>
+    <link rel="icon" href="./images/logo/Reservia@3x.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
@@ -16,60 +16,65 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!--**************************LOGO ET NAVBAR**************************-->
     <header>
       <img id="logo" src="./images/logo/Reservia.svg" alt="logo" />
       <nav>
         <ul id="navbar">
           <li id="active">
             <span id="borduretop"></span> <span id="bordurebot"></span
-            ><a href=".Hebergement">Hébergements</a>
+            ><a href="#hebergements">Hébergements</a>
           </li>
           <li id="navActivites">
-            <span id="bordurebota"></span><a href=".Activités">Activités</a>
+            <span id="bordurebota"></span><a href="#activites">Activités</a>
           </li>
         </ul>
-        <span id="inscription">S'inscrire</span>
+        <span id="inscription"><a href="#">S'inscrire</a></span>
       </nav>
     </header>
+    <!--**************************Paragraphe de présentation de la page**************************-->
     <div id="accueil">
       <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
       <p>En plein centre ville ou en pleine nature</p>
     </div>
+    <!--**************************SEARCHBAR**************************-->
     <div id="searchbar">
       <span id="pointeur"> <i class="fas fa-map-marker-alt"></i> </span>
       <input id="text" type="text" value="Marseille, France" />
       <input id="rechercher" type="button" value="Rechercher" />
       <span id="loupe"> <i class="fas fa-search"></i></span>
     </div>
+    <!--**************************FILTRES**************************-->
     <div id="filtres">
       <h3>Filtres</h3>
       <div class="filtresBase">
         <span class="filtreIcone"><i class="fas fa-money-bill-wave"></i></span>
         <span class="filtreDescription">Economique</span>
       </div>
-
       <div class="filtresBase">
         <span class="filtreIcone"><i class="fas fa-child"></i></span>
         <span class="filtreDescription">Familial</span>
       </div>
-
       <div class="filtresBase">
         <span class="filtreIcone"><i class="fas fa-heart"></i></span>
         <span class="filtreDescription">Romantique</span>
       </div>
-
       <div class="filtresBase">
         <span class="filtreIcone"><i class="fas fa-dog"></i></span>
         <span class="filtreDescription">Animaux autorisés</span>
       </div>
     </div>
+    <!--**************************INFORMATIONS**************************-->
     <div id="information">
       <span id="iconeInformation"><i class="fas fa-info"></i></span>
       <p>Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
-    <div id="hebergements">
+    <!--**************************MAIN DE LA PAGE**************************-->
+    <main id="hebergements">
+      <!--**************************SECTION HEBERGEMENTS A MARSEILLE-->
       <section id="Marseille">
         <h2>Hébergements à Marseille</h2>
         <div class="cartehotel">
@@ -200,8 +205,9 @@
         </div>
         <aside>Afficher plus</aside>
       </section>
-      <section class="populaires">
-        <div class="titrepopulaires">
+      <!--**************************SECTION HEBERGEMENTS POPULAIRES-->
+      <section id="populaires">
+        <div id="titrepopulaires">
           <h2>Les plus populaires</h2>
           <span><i class="fas fa-chart-line"></i></span>
         </div>
@@ -287,7 +293,8 @@
           </div>
         </div>
       </section>
-    </div>
+    </main>
+    <!--**************************ACTIVITES**************************-->
     <div id="titreActivite">
       <h2>Activités à Marseille</h2>
     </div>
