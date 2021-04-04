@@ -18,20 +18,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 25px;
 }
 nav {
   display: flex;
   align-items: center;
 }
 #logo {
-  margin-left: 20px;
+  padding-left: 50px;
   margin-top: 25px;
 }
 #navbar {
   display: flex;
   height: 100px;
-  margin-right: 50px;
 }
 #navbar li {
   padding: 0 35px;
@@ -40,20 +38,14 @@ nav {
   justify-content: center;
   align-items: center;
 }
-#active {
-  position: relative;
+#navbar li:hover {
+  border-top: 3px solid #0065fc;
 }
-#active a {
+#navbar a:hover {
   color: #0065fc;
 }
-#borduretop {
-  position: absolute;
-  border: 2px solid #0065fc;
-  top: 0px;
-  width: 100%;
-}
 #inscription {
-  margin-top: 5px;
+  margin: 10px 40px 0 15px;
 }
 #inscription a {
   color: #0065fc;
@@ -68,9 +60,22 @@ nav {
     margin-bottom: 70px;
   }
   nav {
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
     height: 60px;
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: 4px solid #f2f2f2;
+  }
+  #navbar {
+    width: 100%;
+  }
+  #navbar li {
+    width: 50%;
+  }
+  #navbar li:hover {
+    border-bottom: 4px solid #0065fc;
+    border-top: 0;
+    margin-bottom: 16px;
   }
   #logo {
     position: relative;
@@ -78,25 +83,9 @@ nav {
   }
   #inscription {
     position: absolute;
-    right: 25px;
+    margin: 0;
     top: 35px;
-  }
-  #borduretop {
-    display: none;
-  }
-  #bordurebot {
-    border: 2px solid #0065fc;
-    position: absolute;
-    width: 280%;
-    bottom: 0px;
-    margin-bottom: 15px;
-  }
-  #bordurebota {
-    border: 2px solid #f2f2f2;
-    position: absolute;
-    width: 50%;
-    right: 1px;
-    top: 131px;
+    right: 25px;
   }
 }
 /********************************* ACCUEIL *********************************/
