@@ -53,7 +53,7 @@ nav {
   font-size: 1.1em;
 }
 /********************************* Responsive Header *********************************/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   header {
     flex-direction: column;
     align-items: flex-start;
@@ -100,11 +100,11 @@ nav {
   font-weight: 400;
 }
 /********************************* Responsive Accueil *********************************/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   #accueil {
     margin-left: 20px;
     font-size: 0.9em;
-    width: 300px;
+    width: 90%;
   }
 }
 /********************************* SEARCHBAR *********************************/
@@ -146,9 +146,12 @@ nav {
   display: none;
 }
 /********************************* Responsive Searchbar *********************************/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   #rechercher {
     display: none;
+  }
+  #text {
+    width: 75%;
   }
   #loupe {
     background-color: #0065fc;
@@ -160,14 +163,16 @@ nav {
     align-items: center;
   }
   #searchbar {
-    width: 350px;
-    margin: 35px 0 10px 15px;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /********************************* FILTRES *********************************/
 #filtres {
   display: flex;
-  width: 96vw;
+  width: 94%;
   margin: 5px 0 30px 50px;
 }
 #filtres h3 {
@@ -242,7 +247,7 @@ nav {
   color: #0065fc;
 }
 /********************************* Responsive Informations *********************************/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   #information {
     margin: 35px 0 35px 20px;
   }
@@ -284,7 +289,8 @@ nav {
   font-size: 1.2em;
   font-weight: bold;
 }
-.cartehotel {
+.cartehotel,
+#cartehotel6 {
   border: 5px solid white;
   border-radius: 20px;
   box-shadow: 0px 0px 5px -1px rgba(8, 7, 7, 0.281);
@@ -293,7 +299,8 @@ nav {
   position: relative;
   overflow: hidden;
 }
-.cartehotel img {
+.cartehotel img,
+#cartehotel6 img {
   position: absolute;
   height: 110%;
   width: 110%;
@@ -340,16 +347,18 @@ nav {
   width: 82%;
   display: flex;
 }
-.imagepopulaires {
+.imagepopulaires,
+#imagepopulaires3 {
   position: relative;
   overflow: hidden;
   width: 50%;
   height: 100%;
   border-radius: 20px 0 0 20px;
 }
-.imagepopulaires img {
+.imagepopulaires img,
+#imagepopulaires3 img {
   position: absolute;
-  width: 130%;
+  width: 150%;
   height: 110%;
   margin: auto;
   right: -500px;
@@ -383,7 +392,8 @@ nav {
     margin: auto;
     margin-bottom: 45px;
   }
-  .cartehotel {
+  .cartehotel,
+  #cartehotel6 {
     width: 40%;
     height: 22%;
   }
@@ -392,14 +402,14 @@ nav {
     height: 25%;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   #hebergements {
     margin: 0;
   }
   #Marseille {
     justify-content: space-evenly;
     background-color: white;
-    height: 220vh;
+    height: 1500px;
     width: 100vw;
   }
   #Marseille h2 {
@@ -409,23 +419,43 @@ nav {
     padding: 30px 20px 15px 20px;
   }
   #populaires {
-    height: 85vh;
+    height: 600px;
     width: 100vw;
     border-radius: 0;
     padding-bottom: 30px;
   }
-  .cartepopulaires {
-    width: 90vw;
-    height: 20vh;
+  .populairesbase {
+    width: 70%;
   }
-  .cartehotel {
+  .cartepopulaires {
+    width: 85%;
+    height: 140px;
+  }
+
+  .imagepopulaires img {
+    width: 150%;
+    height: 140%;
+    top: -20px;
+  }
+  #imagepopulaires3 img {
+    width: 100%;
+    height: 250%;
+    top: -130px;
+  }
+  .cartehotel,
+  #cartehotel6 {
     height: 13%;
-    width: 90%;
+    width: 85%;
   }
   .cartehotel img {
     height: 130%;
     width: 100%;
     top: -90px;
+  }
+  #cartehotel6 img {
+    height: 300%;
+    width: 110%;
+    top: -280px;
   }
 }
 /********************************* NOTES *********************************/
@@ -560,7 +590,7 @@ nav {
     flex-direction: column;
     width: 100%;
     padding: 0;
-    height: 1280px;
+    height: 1500px;
   }
   .carteactivite,
   #carteactivite2,
@@ -579,7 +609,8 @@ nav {
   }
   #carteactivite2 img {
     height: 300%;
-    top: -200px;
+    width: 120%;
+    top: -250px;
   }
   #titreActivite {
     margin: 15px 0 15px 20px;
